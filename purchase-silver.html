@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purchase Silver Card</title>
+  <style>
+    body {
+      background: #1c1c1c;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 500px;
+      margin: 2rem auto;
+      background: #2c2c2c;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.2rem;
+    }
+    form input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    form a {
+      background: silver;
+      color: black;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    form a:hover {
+      background: #c0c0c0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Silver Fan Card Application - $500</h1>
+  <form action="/submit-silver" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" />
+
+    <label for="address">Shipping Address</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+
+    <label for="preferences">Favorite Song or Album (optional)</label>
+    <input type="text" id="preferences" name="preferences" />
+
+
+<br>
+    <a href="https://hushpay.app/send-gift/6889a5074d23f">Apply for Silver Card</a>
+  </form>
+      <label for="newsletter">
+      <input type="checkbox" id="newsletter" name="newsletter" />
+      Subscribe to fan updates & events
+    </label>
+</body>
+</html>

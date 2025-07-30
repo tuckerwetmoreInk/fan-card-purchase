@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <title>Tucker Wetmore Fan Cards</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #1a1a1a, #333);
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #000;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      max-height: 50px;
+    }
+    .nav {
+      margin-right: 2rem;
+    }
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+        .top-image-container {
+      overflow: hidden;
+      max-width: 1000px;
+      margin: 2rem auto;
+      border-radius: 10px;
+    }
+    .top-image-container img {
+      width: 100%;
+      transition: transform 0.5s ease;
+      border-radius: 10px;
+    }
+    .top-image-container img:hover {
+      transform: scale(1.05);
+    }
+    h1 {
+      margin-top: 1rem;
+      font-size: 2.5rem;
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: #111;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    .card img {
+      width: 100%;
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+    .card p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .footer {
+      padding: 2rem;
+      background: #000;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="TuckerWetmore_logo_stacked-modified-1.png" alt="Tucker Wetmore Logo">
+    </div>
+    <div class="nav">
+      <a href="/about-membership.html">About Membership</a>
+    </div>
+  </header>
+  <div class="top-image-container">
+    <img src="tucker-wetmore.jpg" alt="Fan Club Banner" />
+  </div>
+  <h1>Fan Membership Cards</h1>
+  <p>Select your tier and join the exclusive fan experience!</p>
+
+  <div class="cards-container">
+    <a href="/purchase-silver.html">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <img src="image-16~2.jpg" alt="Silver Card">
+        <h2>Silver Card</h2>
+        <p>$500</p>
+        
+      </div>
+    </a>
+
+    <a href="/purchase-gold.html">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <img src="image-20~3.jpg" alt="Gold Card">
+        <h2>Gold Card</h2>
+        <p>$1000</p>
+      </div>
+    </a>
+
+    <a href="/purchase-diamond.html">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <img src="image-17~3.jpg" alt="Diamond Card"><br>
+        <h2>Diamond Card</h2>
+        <p>$3000</p>
+        <br> 
+      </div>
+    </a>
+  </div>
+
+  <section style="padding: 2rem; background: #222;">
+  <h2 style="color: gold;">Fan Testimonials</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+    <div style="background: #333; padding: 1rem; border-radius: 10px; max-width: 300px;" data-aos="fade-right">
+      <p>“Joining the Diamond Club was the best decision ever. I got to meet Tucker physically”</p>
+      <strong>– Jessica, NY</strong>
+    </div>
+    <div style="background: #333; padding: 1rem; border-radius: 10px; max-width: 300px;" data-aos="fade-left">
+      <p>“I love the Gold perks and early ticket access. Totally worth it!”</p>
+      <strong>– Marcus, TX</strong>
+    </div>
+    <div style="background: #333; padding: 1rem; border-radius: 10px; max-width: 300px;" data-aos="fade-left">
+      <p>“The Silver card gave me early access to merch drops and a welcome package I loved. I'm definitely upgrading soon!”</p>
+  <strong>– Emily, CA</strong>
+    </div>
+  </div>
+</section>
+
+
+  <div class="footer">
+    <p>&copy; 2025 Tucker Wetmore Fan Club. All Rights Reserved.</p>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => AOS.init());
+</script>
+</body>
+</html>
